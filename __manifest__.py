@@ -12,7 +12,11 @@
         'views/hotel_reservation_view.xml',
         'views/hotel_reservation_menu.xml',
     ],
+    'images': [
+        'static/description/icon.png',  # Ruta al archivo de icono
+    ],
     'installable': True,
     'application': True,
     'auto_install': False,
+
 }
