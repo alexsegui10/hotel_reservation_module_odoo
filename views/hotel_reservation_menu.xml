@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hotel_reservation_action" model="ir.actions.act_window">
+        <field name="name">Reservas de Hotel</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hotel.reservation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea una nueva reserva de hotel.
+            </p>
+        </field>
+    </record>
+    <menuitem id="hotel_reservation_menu_root" name="Reservas de Hotel" sequence="10" web_icon="hotel_reservation,static/description/icon.png"/>
+    <menuitem id="hotel_reservation_menu_submenu" name="Gestión de Reservas" sequence="10" parent="hotel_reservation_menu_root"/>
+    <menuitem id="hotel_reservation_menu_action" name="Reservas" sequence="10" parent="hotel_reservation_menu_submenu" action="hotel_reservation_action"/>    
+</odoo>
